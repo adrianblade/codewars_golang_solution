@@ -1,13 +1,21 @@
 package src
 
-import (
-  . "github.com/onsi/ginkgo"
-  . "github.com/onsi/gomega"
-  . "codewarrior/kata"
-)
+import "testing"
 
-var _ = Describe("Example Test", func() {
-  It("should test that the solution returns the correct value", func() {
-    Expect(HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")).To(Equal("42 -9"))
-  })
-})
+func TestHighAndLow(t *testing.T) {
+	tests := []struct {
+		name string
+		args string
+		want string
+	}{
+		//{"", "8 3 -5 42 -1 0 0 -9 4 7 4 -4", "42 -9"},
+		{"", "8 3 -5 42 -1 0 0 -9 4 7 4 -4", "throw towel"},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := HighAndLow(tt.args); got != tt.want {
+				t.Errorf("HighAndLow() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
