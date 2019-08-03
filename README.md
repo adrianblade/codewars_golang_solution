@@ -6,7 +6,7 @@
 ## My Solutions
 | kyu | Codewars Kate | My Solutions |
 | --- | --- | --- |
-| 8 | [Highest and Lowest](https://www.codewars.com/kata/554b4ac871d6813a03000035) | [highest_and_lowest.go](https://github.com/adrianblade/codewars_golang_solution/8kyu/highest_and_lowest/src/highest_and_lowest.go) |
+| 8 | [Highest and Lowest](https://www.codewars.com/kata/554b4ac871d6813a03000035) | [highest_and_lowest.go](https://github.com/adrianblade/codewars_golang_solution/blob/master/kyu8/highest_and_lowest/src/highest_and_lowest.go) |
 
 
 ## To execute script 
@@ -30,4 +30,3 @@ hello world`
 ##  To execute test
 
 go test # to run your tests
-
