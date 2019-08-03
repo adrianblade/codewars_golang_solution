@@ -8,8 +8,7 @@ func TestHighAndLow(t *testing.T) {
 		args string
 		want string
 	}{
-		//{"", "8 3 -5 42 -1 0 0 -9 4 7 4 -4", "42 -9"},
-		{"", "8 3 -5 42 -1 0 0 -9 4 7 4 -4", "throw towel"},
+		{"", "8 3 -5 42 -1 0 0 -9 4 7 4 -4", "42 -9"},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
